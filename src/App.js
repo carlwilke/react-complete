@@ -10,7 +10,7 @@ const expenses = [
   {
     id: "e2",
     title: "Curry Inferno",
-    amount: 799.49,
+    amount: 99.49,
     date: new Date(2021, 2, 12),
   },
   {
@@ -21,7 +21,7 @@ const expenses = [
   },
   {
     id: "e4",
-    title: "New Desk (Wooden)",
+    title: "New Underwear (Kevlar)",
     amount: 450,
     date: new Date(2021, 5, 12),
   },

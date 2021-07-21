@@ -1,13 +1,15 @@
+import React, { useState } from "react";
+
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 
 // Initial static display data
-const expenses = [
+const DUMMY_EXPENSES = [
   {
     id: "e1",
     title: "Curry of Doom",
     amount: 44.12,
-    date: new Date(2020, 7, 14),
+    date: new Date(2021, 7, 14),
   },
   {
     id: "e2",
@@ -29,11 +31,15 @@ const expenses = [
   },
 ];
 
-const addExpenseHandler = (expense) => {
-  console.log("In App.js");
-  console.log(expense);
-};
 function App() {
+  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+
+  const addExpenseHandler = (expense) => {
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses];
+    });
+  };
+
   return (
     <div>
       <h1>Your Expense Magic</h1>

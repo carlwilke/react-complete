@@ -9,25 +9,25 @@ const DUMMY_EXPENSES = [
     id: "e1",
     title: "Curry of Doom",
     amount: 44.12,
-    date: new Date(2021, 7, 14),
+    date: new Date(2021, 2, 14),
   },
   {
     id: "e2",
     title: "Bog Rolls",
     amount: 99.49,
-    date: new Date(2021, 2, 12),
+    date: new Date(2021, 2, 15),
   },
   {
     id: "e3",
     title: "Pepto Bismol",
     amount: 294.67,
-    date: new Date(2021, 2, 28),
+    date: new Date(2021, 2, 16),
   },
   {
     id: "e4",
     title: "New Underwear (Kevlar)",
     amount: 450,
-    date: new Date(2021, 5, 12),
+    date: new Date(2021, 2, 18),
   },
 ];
 
